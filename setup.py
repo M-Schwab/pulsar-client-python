@@ -37,7 +37,7 @@ def get_version():
 
 def get_name():
     postfix = environ.get('NAME_POSTFIX', '')
-    base = 'pulsar-client'
+    base = 'rf-pulsar-client'
     return base + postfix
 
 
@@ -113,7 +113,7 @@ setup(
 
     author="Pulsar Devs",
     author_email="dev@pulsar.apache.org",
-    description="Apache Pulsar Python client library",
+    description="Apache Pulsar Python client library (Riskfuel build of 3.13.0 adding keep_alive_interval_seconds)",
     license="Apache License v2.0",
     url="https://pulsar.apache.org/",
     install_requires=dependencies,
